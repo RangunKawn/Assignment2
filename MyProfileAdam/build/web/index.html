@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Profile Form</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f2f2f2;
+            padding: 40px;
+        }
+        .container {
+            width: 450px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ccc;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 8px;
+            border-radius: 5px;
+            border: 1px solid #aaa;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            width: 100%;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover { background: #45a049; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Personal Profile</h2>
+    <form action="ProfileServlet" method="POST">
+        <label>Name:</label>
+        <input type="text" name="name" required>
+
+        <label>Student ID:</label>
+        <input type="text" name="studentID" required>
+
+        <label>Program:</label>
+        <input type="text" name="program" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+
+        <label>Hobbies:</label>
+        <input type="text" name="hobbies">
+
+        <label>Self Introduction:</label>
+        <textarea name="intro" rows="4"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
